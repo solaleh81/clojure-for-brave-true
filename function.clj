@@ -9,3 +9,13 @@
    :critter critter})
 
 (map unify-diet-data human-consumption critter-consumption)
+
+
+(def sum #(reduce + %))
+(def avg #(/ (sum %) (count %)))
+
+(defn states
+  [numbers]
+  (map #(% numbers) [sum count avg]))
+
+(states [3 4 10])
