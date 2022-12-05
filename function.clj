@@ -19,3 +19,19 @@
   (map #(% numbers) [sum count avg]))
 
 (states [3 4 10])
+
+(def set-str #(str %))
+
+(set-str 12)
+
+(defn titleize
+  [topic]
+  (str topic " for the Brave and True"))
+
+(map titleize ["Hamsters" "Ragnarok"])
+
+(map titleize '("Empathy" "Decorating"))
+
+(map titleize #{"Elbows" "Soap Carving"})
+
+(map #(titleize (second %)) {:uncomfortable-thing "Winking"})
