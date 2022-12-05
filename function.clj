@@ -52,3 +52,12 @@
         {}
         {:human 4.1
          :critter 3.9})
+
+
+(defn fibo [n]
+  (condp = n
+    0 0
+    1 1
+    (+ (fibo (- n 1)) (fibo (- n 2)))))
+
+(fibo 12)
