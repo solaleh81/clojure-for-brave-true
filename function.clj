@@ -35,3 +35,12 @@
 (map titleize #{"Elbows" "Soap Carving"})
 
 (map #(titleize (second %)) {:uncomfortable-thing "Winking"})
+
+(reduce (fn [new-map [key val]]
+          (assoc new-map key (inc val)))
+        {}
+        {:max :min 10})
+
+
+(assoc (assoc {} :max (inc 30))
+       :min (inc 10))
