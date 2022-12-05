@@ -44,3 +44,11 @@
 
 (assoc (assoc {} :max (inc 30))
        :min (inc 10))
+
+(reduce (fn [new-map [key val]]
+          (if (> val 4)
+            (assoc new-map key val)
+            new-map))
+        {}
+        {:human 4.1
+         :critter 3.9})
