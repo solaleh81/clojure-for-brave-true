@@ -100,3 +100,7 @@
 (some #(> (:critter %) 3) food-journal)
 
 (some #(and (> (:critter %) 3) %) food-journal)
+
+(sort [3 1 2])
+
+(sort-by count ["aaa" "c" "bb"])
