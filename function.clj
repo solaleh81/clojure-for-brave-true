@@ -85,3 +85,12 @@
 
 (take-while #(< (:month %) 4)
             (drop-while #(< (:month %) 2) food-journal))
+
+(assoc (assoc {} :max (inc 30))
+       :min (inc 10))
+
+(def create-map #(assoc {} % (inc 12)))
+
+(map #(% [:firstname :lastname]) [create-map])
+
+(filter #(< (:human %) 5) food-journal)
