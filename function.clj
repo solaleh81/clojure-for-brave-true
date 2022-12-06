@@ -80,3 +80,8 @@
   )
 
 (take-while #(< (:month %) 3) food-journal)
+
+(drop-while #(< (:month %) 3) food-journal)
+
+(take-while #(< (:month %) 4)
+            (drop-while #(< (:month %) 2) food-journal))
