@@ -94,3 +94,9 @@
 (map #(% [:firstname :lastname]) [create-map])
 
 (filter #(< (:human %) 5) food-journal)
+
+(some #(> (:critter %) 5) food-journal)
+
+(some #(> (:critter %) 3) food-journal)
+
+(some #(and (> (:critter %) 3) %) food-journal)
