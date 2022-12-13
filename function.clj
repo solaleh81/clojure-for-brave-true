@@ -147,3 +147,9 @@
 (empty? [])
 
 (empty? ["no"])
+
+(map identity {:sunlight-reaction "Glitter"})
+
+(into {} (map identity {:sunlight-reaction "Glitter"}))
+
+(into [] (map identity [:garlic :sesame-oil :fried-eggs]))
