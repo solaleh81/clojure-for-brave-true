@@ -141,3 +141,6 @@
   ([n] (cons n (lazy-seq (even-numbers (+ n 2))))))
 
 (take 10 (even-numbers))
+
+(cons 0 '(2 3 4))
+
