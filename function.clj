@@ -128,4 +128,10 @@
                  (map vampire-related-details social-security-numbers))))
 
 
+(time (vampire-related-details 3))
+
 (time (vampire-related-details 0))
+
+(concat (take 8 (repeat "na")) ["Batman"])
+
+(take 3 (repeatedly (fn [] (rand-int 10))))
