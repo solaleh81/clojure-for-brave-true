@@ -153,3 +153,9 @@
 (into {} (map identity {:sunlight-reaction "Glitter"}))
 
 (into [] (map identity [:garlic :sesame-oil :fried-eggs]))
+
+(into #{} (map identity [:garlic-clove :garlic-clove]))
+
+(into {:favorite-emotion "gloomy"} [[:sunlight-reaction "Glitter!"]])
+
+(into ["cherry"] '("pine" "spurce"))
