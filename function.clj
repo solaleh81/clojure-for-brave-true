@@ -161,3 +161,9 @@
 (into ["cherry"] '("pine" "spurce"))
 
 (conj [0] [1])
+
+(defn my-conj
+  [target & additions]
+  (into target additions))
+
+(my-conj [0] 1 2 3)
