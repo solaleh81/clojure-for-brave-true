@@ -167,3 +167,5 @@
   (into target additions))
 
 (my-conj [0] 1 2 3)
+
+(max 0 1 2)
