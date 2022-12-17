@@ -177,3 +177,12 @@
   (apply conj target additions))
 
 (my-into [0] [1 2 3])
+
+(def add10 (partial + 10))
+
+(add10 3)
+
+(def add-missing-elements
+  (partial conj ["water" "earth" "air"]))
+
+(add-missing-elements "unobtaininum" "adamantium")
