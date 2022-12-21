@@ -20,3 +20,11 @@
 (convert :glitter-index "3")
 
 
+(defn parse
+  "Convert a CSV into rows of columns"
+  [string]
+  (map #(clojure.string/split % #",")
+       (clojure.string/split string #"\n")))
+
+(parse (slurp filename))
+
