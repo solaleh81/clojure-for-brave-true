@@ -186,3 +186,6 @@
   (partial conj ["water" "earth" "air"]))
 
 (add-missing-elements "unobtaininum" "adamantium")
+
+(defn mapify
+  "Return a seq of maps like {:name 'edward cullen' :glitter-index 12}")
