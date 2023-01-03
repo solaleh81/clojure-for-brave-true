@@ -41,3 +41,17 @@ great-baby-name
 (sum [5 1] 39)
 (sum [1] 44)
 (sum [] 45) ; base case is reached, so return accumulating-total
+
+(defn is-valid-email-address? [email] (re-matches #".+\@.+\..+" email))
+
+(is-valid-email-address? "ppp@exapmle.com")
+
+(fn checked (re-matches #".+\@.+\..+" email))
+
+(require '[clojure.string :as s])
+
+(defn clean
+  [text]
+  (s/replace (s/trim text) #"lol" "LOL"))
+
+(clean "My boa constrictor is so sassy lol!")
